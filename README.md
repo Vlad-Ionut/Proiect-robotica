@@ -1,71 +1,67 @@
-# **Radar cu Arduino pentru Detectarea Obiectelor**
+# **Arduino Radar for Object Detection**
 
-## **Descriere Proiect**
-Acest proiect este un sistem radar care utilizează un senzor ultrasonic HC-SR04 și un servo-motor SG90 pentru a scana mediul și a detecta obstacolele într-un anumit interval unghiular. Datele colectate sunt afișate într-o interfață grafică pe PC, oferind o simulare vizuală a unui radar real.
+## **Project Description**
+This project is a radar system that uses an HC-SR04 ultrasonic sensor and an SG90 servo motor to scan the environment and detect obstacles within a specified angular range. The collected data is displayed on a graphical interface on a PC, providing a visual simulation of a real radar system.
 
-### **Caracteristici**
-- Detectarea obstacolelor pe o rază de până la 4 metri.
-- Scanare unghiulară între 0° și 180°.
-- Afișare în timp real pe interfața grafică a PC-ului.
+### **Features**
+- Obstacle detection within a range of up to 4 meters.  
+- Angular scanning between 0° and 180°.  
+- Real-time display on the PC graphical interface.  
 
-## **Scopul Proiectului**
-Acest proiect a fost realizat pentru a explora integrarea hardware-ului (Arduino, senzori, servo-motoare) cu software-ul (codul pentru Arduino și interfața grafică de pe PC). Este util pentru educație, dezvoltarea de roboți autonomi și înțelegerea principiilor de bază ale senzorilor de proximitate, cat si invățarea principiilor de bază ale electronicii, programării și utilizării senzorilor pentru aplicații practice.
+## **Project Goal**
+This project was created to explore the integration of hardware (Arduino, sensors, servo motors) with software (Arduino code and PC graphical interface). It is useful for education, autonomous robot development, and understanding the basic principles of proximity sensors, as well as learning fundamental principles of electronics, programming, and sensor applications in practical scenarios.
 
-# **Ideea de Pornire**
+# **Initial Idea**
 
-S-a pornit de la ideea de a realiza un sistem simplu, dar intuitiv, care să demonstreze utilizarea senzorilor de distanță într-un mod interactiv.
+The project started with the idea of creating a simple yet intuitive system to demonstrate the use of distance sensors in an interactive way.
 
-## **Utilitate**
+## **Usefulness**
 
-Proiectul poate fi utilizat pentru:  
-- **Aplicații educative**: Un exemplu practic pentru înțelegerea senzorilor, a servo-motoarelor și a microcontrolerelor.  
-- **Prototipuri**: Bază pentru sisteme de detectare a obstacolelor în roboți sau alte dispozitive autonome.  
+This project can be utilized for:  
+- **Educational Applications**: A practical example for understanding sensors, servo motors, and microcontrollers.  
+- **Prototypes**: A foundation for obstacle detection systems in robots or other autonomous devices.  
 
 ---
 
-## **Schema Bloc**
+## **Block Diagram**
 
 - **Arduino UNO**  
-  - **Rol**: Controlul general al senzorului și al servo-motorului.  
+  - **Role**: General control of the sensor and servo motor.  
 
-- **Senzor Ultrasonic (HC-SR04)**  
-  - **Rol**: Măsoară distanțele față de obstacole.  
+- **Ultrasonic Sensor (HC-SR04)**  
+  - **Role**: Measures distances to obstacles.  
 
-- **Servo-motor**  
-  - **Rol**: Permite rotirea senzorului ultrasonic într-un interval de unghiuri.  
+- **Servo Motor**  
+  - **Role**: Rotates the ultrasonic sensor within an angular range.  
 
-- **PC (Interfață Grafică)**  
-  - **Rol**: Primește datele prin portul serial și afișează o simulare radar în timp real.  
+- **PC (Graphical Interface)**  
+  - **Role**: Receives data via the serial port and displays a real-time radar simulation.  
 
-- **Conexiuni Hardware**  
-  - Fire pentru alimentare și comunicare între module.  
-
----
-
-## **Modul de Interacțiune**
-
-1. Arduino primește comenzi pentru a roti servo-motorul într-un anumit unghi.  
-2. Senzorul ultrasonic măsoară distanțele față de obstacole la fiecare unghi.  
-3. Datele sunt transmise prin portul serial către un PC.  
-4. Un program dedicat procesează și afișează datele sub formă de simulare radar.
+- **Hardware Connections**  
+  - Wires for power supply and communication between modules.  
 
 ---
 
-## **Listă de Piese**
+## **Interaction Mode**
 
-- **Arduino UNO/Mega** (1 buc.)  
-- **Senzor ultrasonic HC-SR04** (1 buc.)  
-- **Servo-motor SG90 sau MG995** (1 buc.)  
-- **Breadboard și fire de conexiune**  
-- **Cablu USB** pentru conectare la PC  
+1. The Arduino receives commands to rotate the servo motor to a specific angle.  
+2. The ultrasonic sensor measures distances to obstacles at each angle.  
+3. The data is transmitted via the serial port to a PC.  
+4. A dedicated program processes and displays the data as a radar simulation.  
 
-### **Cerințe Hardware**
-- Arduino UNO/Mega
-- Senzor ultrasonic HC-SR04
-- Servo-motor SG90
-- Breadboard și fire de conexiune
-- Cablu USB
+---
 
+## **Parts List**
 
+- **Arduino UNO/Mega** (1 unit)  
+- **Ultrasonic Sensor HC-SR04** (1 unit)  
+- **Servo Motor SG90 or MG995** (1 unit)  
+- **Breadboard and connecting wires**  
+- **USB Cable** for PC connection  
 
-
+### **Hardware Requirements**
+- Arduino UNO/Mega  
+- Ultrasonic Sensor HC-SR04  
+- Servo Motor SG90  
+- Breadboard and connecting wires  
+- USB Cable  
