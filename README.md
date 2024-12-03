@@ -11,9 +11,7 @@ Acest proiect este un sistem radar care utilizează un senzor ultrasonic HC-SR04
 ## **Scopul Proiectului**
 Acest proiect a fost realizat pentru a explora integrarea hardware-ului (Arduino, senzori, servo-motoare) cu software-ul (codul pentru Arduino și interfața grafică de pe PC). Este util pentru educație, dezvoltarea de roboți autonomi și înțelegerea principiilor de bază ale senzorilor de proximitate.
 
----
 
-## **Cum să Rulezi Proiectul**
 
 ### **Cerințe Hardware**
 - Arduino UNO/Mega
@@ -26,13 +24,4 @@ Acest proiect a fost realizat pentru a explora integrarea hardware-ului (Arduino
 - **Arduino IDE:** Pentru încărcarea codului pe Arduino.
 - **Processing/Python:** Pentru rularea interfeței grafice radar.
 
-### **Instrucțiuni**
-1. **Conectează componentele:** Urmează schema electrică din directorul `hardware/`.
-2. **Descarcă codul sursă:** Codul Arduino este în directorul `src/`.
-3. **Compilează și încarcă codul:** Utilizează Arduino IDE pentru a încărca fișierul `.ino` pe Arduino.
-4. **Rulează interfața grafică:** Deschide scriptul din Processing sau Python pentru afișare.
-
----
-
-## **Structura Proiectului**
 
