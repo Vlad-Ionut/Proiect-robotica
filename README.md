@@ -11,41 +11,53 @@ Acest proiect este un sistem radar care utilizează un senzor ultrasonic HC-SR04
 ## **Scopul Proiectului**
 Acest proiect a fost realizat pentru a explora integrarea hardware-ului (Arduino, senzori, servo-motoare) cu software-ul (codul pentru Arduino și interfața grafică de pe PC). Este util pentru educație, dezvoltarea de roboți autonomi și înțelegerea principiilor de bază ale senzorilor de proximitate, cat si invățarea principiilor de bază ale electronicii, programării și utilizării senzorilor pentru aplicații practice.
 
-## **Ideea de pornire:**
-    S-a pornit de la ideea de a realiza un sistem simplu, dar intuitiv, care să demonstreze utilizarea senzorilor de distanță într-un mod interactiv.
+# **Ideea de Pornire**
 
-## *Utilitate:*
-    Proiectul poate fi folosit pentru aplicații educative, precum și ca prototip pentru sisteme de detectare a obstacolelor în roboți sau alte dispozitive autonome.
+S-a pornit de la ideea de a realiza un sistem simplu, dar intuitiv, care să demonstreze utilizarea senzorilor de distanță într-un mod interactiv.
 
+## **Utilitate**
 
+Proiectul poate fi utilizat pentru:  
+- **Aplicații educative**: Un exemplu practic pentru înțelegerea senzorilor, a servo-motoarelor și a microcontrolerelor.  
+- **Prototipuri**: Bază pentru sisteme de detectare a obstacolelor în roboți sau alte dispozitive autonome.  
 
-## *Schema bloc:*
+---
 
-    Arduino UNO
-    Rol: Controlul general al senzorului și servo-motorului.
-    Senzor ultrasonic (HC-SR04):
-    Rol: Măsoară distanțele față de obstacole.
-    Servo-motor:
-    Rol: Permite rotirea senzorului ultrasonic într-un interval de unghiuri.
-    PC (Interfață grafică):
-    Rol: Primește datele prin serial și afișează o simulare radar în timp real.
-    Conexiuni hardware:
-    Fire pentru alimentare și comunicare.
+## **Schema Bloc**
 
-## *Modul de interacțiune:*
+- **Arduino UNO**  
+  - **Rol**: Controlul general al senzorului și al servo-motorului.  
 
-    Arduino primește comenzi pentru a roti servo-motorul și colectează date de la senzorul ultrasonic. Datele sunt transmise prin portul serial către un PC, unde sunt procesate și afișate într-un program dedicat.
+- **Senzor Ultrasonic (HC-SR04)**  
+  - **Rol**: Măsoară distanțele față de obstacole.  
 
-(Exemplu generic de schemă bloc pentru un sistem Arduino radar)
-Hardware Design
+- **Servo-motor**  
+  - **Rol**: Permite rotirea senzorului ultrasonic într-un interval de unghiuri.  
 
-### *Listă de piese:*
+- **PC (Interfață Grafică)**  
+  - **Rol**: Primește datele prin portul serial și afișează o simulare radar în timp real.  
 
-    Arduino UNO/Mega (1 buc.)
-    Senzor ultrasonic HC-SR04 (1 buc.)
-    Servo-motor SG90 sau MG995 (1 buc.)
-    Breadboard și fire de conexiune
-    Cablu USB pentru conectare la PC
+- **Conexiuni Hardware**  
+  - Fire pentru alimentare și comunicare între module.  
+
+---
+
+## **Modul de Interacțiune**
+
+1. Arduino primește comenzi pentru a roti servo-motorul într-un anumit unghi.  
+2. Senzorul ultrasonic măsoară distanțele față de obstacole la fiecare unghi.  
+3. Datele sunt transmise prin portul serial către un PC.  
+4. Un program dedicat procesează și afișează datele sub formă de simulare radar.
+
+---
+
+## **Listă de Piese**
+
+- **Arduino UNO/Mega** (1 buc.)  
+- **Senzor ultrasonic HC-SR04** (1 buc.)  
+- **Servo-motor SG90 sau MG995** (1 buc.)  
+- **Breadboard și fire de conexiune**  
+- **Cablu USB** pentru conectare la PC  
 
 ### **Cerințe Hardware**
 - Arduino UNO/Mega
