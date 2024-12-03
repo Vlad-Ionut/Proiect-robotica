@@ -1,0 +1,55 @@
+Radar cu Arduino pentru Detectarea Obiectelor
+Introducere
+
+Descrierea proiectului:
+Proiectul constă într-un sistem radar realizat cu ajutorul platformei Arduino, capabil să detecteze obstacolele într-un anumit unghi. Radarul utilizează un senzor ultrasonic și un servo-motor pentru a scana mediul, iar datele obținute sunt afișate grafic pe un PC.
+
+Scopul proiectului:
+Dezvoltarea unui sistem care combină hardware și software pentru a introduce studenții în conceptele de interacțiune între senzori, microcontrolere și algoritmi grafici.
+
+Ideea de pornire:
+Ideea s-a născut din dorința de a înțelege modul în care funcționează un radar real și de a aplica concepte de bază din electronică și programare pentru a realiza un sistem care să fie util și educativ.
+
+Utilitate:
+
+    Pentru noi: Consolidarea cunoștințelor despre hardware, programare embedded și algoritmi.
+    Pentru alții: Oferă o bază de pornire pentru proiecte mai complexe, cum ar fi roboți autonomi sau sisteme de siguranță.
+
+Descriere generală
+
+Schema bloc:
+
+    Arduino UNO: Controlează senzorul ultrasonic și servo-motorul, gestionează datele.
+    Senzor ultrasonic HC-SR04: Măsoară distanța față de obstacole.
+    Servo-motor SG90: Permite rotirea senzorului pentru scanare.
+    PC cu interfață grafică: Afișează datele colectate sub forma unui radar în timp real.
+
+Fluxul de lucru:
+
+    Servo-motorul rotește senzorul ultrasonic la diferite unghiuri.
+    Senzorul ultrasonic măsoară distanțele.
+    Arduino procesează datele și le trimite către PC prin portul serial.
+    Pe PC, datele sunt afișate grafic utilizând un program (ex. Processing sau Python).
+
+Hardware Design
+
+Lista de componente:
+
+    Arduino UNO
+    Senzor ultrasonic HC-SR04
+    Servo-motor SG90
+    Breadboard și fire de conexiune
+    Cablu USB
+
+Schema electrică:
+
+    Conexiuni HC-SR04:
+        VCC → 5V
+        GND → GND
+        Trig → Pin 9
+        Echo → Pin 10
+
+    Conexiuni servo-motor:
+        VCC → 5V
+        GND → GND
+        Signal → Pin PWM 11
