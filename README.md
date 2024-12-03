@@ -11,7 +11,7 @@ Acest proiect este un sistem radar care utilizează un senzor ultrasonic HC-SR04
 ## **Scopul Proiectului**
 Acest proiect a fost realizat pentru a explora integrarea hardware-ului (Arduino, senzori, servo-motoare) cu software-ul (codul pentru Arduino și interfața grafică de pe PC). Este util pentru educație, dezvoltarea de roboți autonomi și înțelegerea principiilor de bază ale senzorilor de proximitate, cat si invățarea principiilor de bază ale electronicii, programării și utilizării senzorilor pentru aplicații practice.
 
-## ** Ideea de pornire: **
+## **Ideea de pornire:**
     S-a pornit de la ideea de a realiza un sistem simplu, dar intuitiv, care să demonstreze utilizarea senzorilor de distanță într-un mod interactiv.
 
 ## *Utilitate:*
