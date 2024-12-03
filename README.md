@@ -14,12 +14,12 @@ Acest proiect a fost realizat pentru a explora integrarea hardware-ului (Arduino
 ## ** Ideea de pornire: **
     S-a pornit de la ideea de a realiza un sistem simplu, dar intuitiv, care să demonstreze utilizarea senzorilor de distanță într-un mod interactiv.
 
-## Utilitate:
+## *Utilitate:*
     Proiectul poate fi folosit pentru aplicații educative, precum și ca prototip pentru sisteme de detectare a obstacolelor în roboți sau alte dispozitive autonome.
 
 
 
-## Schema bloc:
+## *Schema bloc:*
 
     Arduino UNO
     Rol: Controlul general al senzorului și servo-motorului.
@@ -32,14 +32,14 @@ Acest proiect a fost realizat pentru a explora integrarea hardware-ului (Arduino
     Conexiuni hardware:
     Fire pentru alimentare și comunicare.
 
-## Modul de interacțiune:
+## *Modul de interacțiune:*
 
     Arduino primește comenzi pentru a roti servo-motorul și colectează date de la senzorul ultrasonic. Datele sunt transmise prin portul serial către un PC, unde sunt procesate și afișate într-un program dedicat.
 
 (Exemplu generic de schemă bloc pentru un sistem Arduino radar)
 Hardware Design
 
-### Listă de piese:
+### *Listă de piese:*
 
     Arduino UNO/Mega (1 buc.)
     Senzor ultrasonic HC-SR04 (1 buc.)
