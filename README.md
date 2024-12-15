@@ -72,3 +72,11 @@ This project can be utilized for:
 
 ![image](https://github.com/user-attachments/assets/ae9355f5-ef04-45c6-9416-e8d3b978ce9e)
 
+---
+
+## **Electrical Diagram**
+![image](https://github.com/user-attachments/assets/c182949e-57e1-4736-9aeb-545906e2387b) ![image](https://github.com/user-attachments/assets/fbcb0a94-abb1-4b90-a70e-36d7810b407b)
+
+
+
+
