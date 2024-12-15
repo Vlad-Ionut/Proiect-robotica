@@ -45,6 +45,113 @@ This project can be utilized for:
 
  
 ---
+# **Detailed Description of Hardware Functionality**
+
+This section provides an in-depth explanation of the hardware components, their connections to the microcontroller, and their functional roles in the project. It also covers communication interfaces, power consumption calculations, and other relevant specifications.
+
+---
+
+## **Hardware Components Used**
+
+1. **Arduino UNO/Mega**
+   - **Functionality**: Acts as the central microcontroller responsible for controlling the ultrasonic sensor and servo motor. It processes data from the sensor and communicates with the PC via a serial interface.
+   - **Specifications**:
+     - 16 MHz clock speed.
+     - Operates at 5V.
+     - Input/output pins: 14 digital (6 PWM), 6 analog.
+     - Serial communication: UART (USB connection to PC).
+
+2. **Ultrasonic Sensor (HC-SR04)**  
+   - **Functionality**: Measures the distance to obstacles using ultrasonic waves and sends the measured value to the Arduino for processing.  
+   - **Specifications**:
+     - Voltage: 5V.
+     - Measurement range: 2 cm to 4 m.
+     - Accuracy: ±3 mm.
+     - Communication: Trigger (input) and Echo (output) pins connected to Arduino digital pins.  
+   - **Connection to Arduino**:
+     - `Trigger` pin → Arduino digital pin (configured as output).
+     - `Echo` pin → Arduino digital pin (configured as input).
+
+3. **Servo Motor (SG90 or MG995)**  
+   - **Functionality**: Rotates the ultrasonic sensor within a range of angles (0°–180°) to scan the environment.  
+   - **Specifications**:
+     - Operating voltage: 4.8V–6V.
+     - Torque (SG90): 1.8 kg·cm at 4.8V.
+     - Communication: Controlled by a PWM signal from Arduino.  
+   - **Connection to Arduino**:
+     - Control pin → Arduino PWM pin.
+     - Powered by the 5V output pin on Arduino or an external power source.
+
+4. **Breadboard and Jumper Wires**  
+   - **Functionality**: Used for temporary connections and to establish electrical circuits between components.  
+
+5. **Power Supply**  
+   - **Functionality**: Supplies the required voltage and current to the entire system.  
+   - **Power Source**: Arduino is powered via USB from the PC, which also powers the HC-SR04 and SG90.  
+
+---
+
+## **Hardware Communication Interfaces**
+
+1. **Ultrasonic Sensor Communication**  
+   - **Protocol**: Simple trigger-echo communication.
+     - Arduino sends a 10 µs pulse to the `Trigger` pin.
+     - The sensor emits ultrasonic waves and receives their reflection.
+     - The `Echo` pin produces a pulse proportional to the distance.
+   - **Data Processing**:
+     - The time duration of the `Echo` signal is measured using Arduino’s `pulseIn()` function.
+     - Distance calculation formula:  
+       \[
+       \text{Distance (cm)} = \frac{\text{Time (µs)} \times 0.0343}{2}
+       \]
+
+2. **Servo Motor Communication**  
+   - **Protocol**: PWM (Pulse Width Modulation).
+     - Arduino generates a PWM signal on a digital pin to set the rotation angle.
+     - PWM pulse width range:
+       - 1 ms → 0°.
+       - 2 ms → 180°.
+
+3. **PC Communication**  
+   - **Protocol**: UART (Universal Asynchronous Receiver-Transmitter) via USB.
+     - Baud Rate: 9600 bps.
+     - Data transmitted: Distance measurements and servo angle.
+
+---
+
+## **Power Consumption Calculations**
+
+| **Component**       | **Voltage (V)** | **Current (A)** | **Power (W)**       |
+|----------------------|------------------|------------------|---------------------|
+| Arduino UNO          | 5               | 0.05            | 0.25               |
+| Ultrasonic Sensor    | 5               | 0.015           | 0.075              |
+| Servo Motor (SG90)   | 5               | ~0.15 (peak 1A) | 0.75 (peak 5W)     |
+
+- **Total Power Consumption** (excluding peak currents):  
+  \[
+  P_{\text{total}} = 0.25 + 0.075 + 0.75 = 1.075 \, \text{W}
+  \]
+
+- **Power Source**: The system is powered through USB (5V, 500mA), which is sufficient under normal conditions. If prolonged servo operation occurs, an external power source for the servo motor may be required to prevent overloading the Arduino’s 5V rail.
+
+---
+
+## **Relevant Considerations**
+
+1. **Heat Dissipation**: 
+   - No significant heating issues are expected due to the low power consumption. However, prolonged servo operation at high torque may cause slight heating.
+
+2. **External Power Source (if required)**:  
+   - In case of higher power requirements (e.g., for more powerful servo motors), an external 5V power source should be used, with a common ground connection to the Arduino.
+
+3. **Component Protection**:
+   - **Decoupling Capacitors**: Recommended for stabilizing the power supply to the servo motor and sensor.
+   - **Diodes**: Used for back EMF protection in the servo motor.
+
+4. **Accuracy of Measurements**:
+   - Distance readings may vary due to environmental factors like air temperature or obstacles with non-reflective surfaces. Adjustments to the distance calculation formula may be necessary for precise applications.
+
+---
 
 ## **Block Diagram**
 
