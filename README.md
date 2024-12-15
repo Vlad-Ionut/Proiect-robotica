@@ -153,6 +153,19 @@ This section provides an in-depth explanation of the hardware components, their 
 
 ---
 
+## **Pin  Table**
+
+| **Component**         | **Pin Name**   | **Arduino Pin** | **Purpose**                                                   |
+|------------------------|----------------|-----------------|---------------------------------------------------------------|
+| **Ultrasonic Sensor**  | Trigger        | Digital Pin 9   | Sends a HIGH pulse to initiate ultrasonic wave transmission.  |
+|                        | Echo           | Digital Pin 8   | Reads pulse duration to measure distance.                     |
+| **Servo Motor**        | Control        | Digital Pin 10  | Receives PWM signal to control rotation angle.                |
+| **PC Communication**   | Serial TX/RX   | USB Port        | Sends and receives data for visualization and control.        |
+| **Power**              | VCC            | 5V              | Powers all components.                                        |
+|                        | GND            | GND             | Shared ground connection for all components.                  |
+
+---
+
 ## **Block Diagram**
 
 ![image](https://github.com/user-attachments/assets/ae9355f5-ef04-45c6-9416-e8d3b978ce9e)
