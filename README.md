@@ -64,4 +64,11 @@ This project can be utilized for:
 - Ultrasonic Sensor HC-SR04  
 - Servo Motor SG90  
 - Breadboard and connecting wires  
-- USB Cable  
+- USB Cable
+
+---
+
+## **Diagrama block**
+
+![image](https://github.com/user-attachments/assets/ae9355f5-ef04-45c6-9416-e8d3b978ce9e)
+
