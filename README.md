@@ -68,7 +68,7 @@ This project can be utilized for:
 
 ---
 
-## **Diagrama block**
+## **Block Diagram**
 
 ![image](https://github.com/user-attachments/assets/ae9355f5-ef04-45c6-9416-e8d3b978ce9e)
 
