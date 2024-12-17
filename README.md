@@ -167,8 +167,8 @@ This section provides an in-depth explanation of the hardware components, their 
 ---
 
 ## **Block Diagram**
+![image](https://github.com/user-attachments/assets/fb5defc9-37cc-4f69-8c4b-0f6baf6098d2)
 
-![image](https://github.com/user-attachments/assets/ae9355f5-ef04-45c6-9416-e8d3b978ce9e)
 
 - **Arduino UNO**  
   - **Role**: General control of the sensor and servo motor.  
