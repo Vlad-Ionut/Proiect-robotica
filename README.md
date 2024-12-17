@@ -188,8 +188,10 @@ This section provides an in-depth explanation of the hardware components, their 
 ---
 
 ## **Electrical Diagram**
-![image](https://github.com/user-attachments/assets/1fd1f829-6b0f-49ad-8502-a88d9b12c00d)
 
+![image](https://github.com/user-attachments/assets/e8ca37f2-e9c5-48bb-b996-1aadacefc2ae)
+
+![image](https://github.com/user-attachments/assets/101306ff-2984-4790-b7bb-b6940fd8597a)
 
 ---
 
