@@ -194,9 +194,63 @@ This section provides an in-depth explanation of the hardware components, their 
 ![image](https://github.com/user-attachments/assets/101306ff-2984-4790-b7bb-b6940fd8597a)
 
 ---
+## Current Stage of Software Implementation
+The project is fully operational. The ultrasonic sensor, mounted on a servo motor, detects nearby objects, and the collected data is transmitted via serial communication to a graphical interface developed in Processing. The interface displays an animated radar, indicating the angle and distance of detected objects.
 
-## **Video implementare**
+## Motivation for Library Choices
+- **Servo.h (Arduino):** Used for controlling the servo motor, ensuring precise rotation for environmental scanning.  
+- **Processing Serial Library:** Facilitates efficient data transmission between Arduino and the graphical application.  
+- **Processing Core Libraries:** Utilized for:
+  - Drawing the radar.
+  - Displaying real-time data.
+  - Creating an appealing and informative visual interface.
+
+## Novelty Element
+The innovative aspect of the project lies in integrating a hardware system with an interactive graphical interface, offering an intuitive and clear visual experience for object monitoring. The system is compact, user-friendly, and replicable in real-world applications such as autonomous robots or safety systems.
+
+## Justification of Laboratory Functionalities
+The project leverages knowledge and technologies studied in the laboratory sessions:
+- **USART (Lab 1):** Serial communication between Arduino and Processing for data transmission.  
+- **PWM (Lab 3):** Precise control of the servo motor's position.  
+- **ADC (Lab 4):** Conversion of analog data from the ultrasonic sensor.  
+- **Timers and Interrupts (Lab 2):** Synchronization of servo motor rotation and sensor measurements.
+
+## Project Structure
+### Hardware
+- **Ultrasonic Sensor:** Measures distances to objects.  
+- **Servo Motor:** Rotates the sensor to scan a 180° range.  
+- **LEDs:** Signal system status based on detected objects.
+
+### Software
+- **Arduino:** Processes and transmits data to the graphical interface.  
+- **Processing:** Displays an animated radar and relevant distance and angle information.
+
+### Validation
+- Hardware and software testing to ensure accurate distance measurement and correct graphical interface display.  
+- Performance testing for real-time system response.
+
+## Video Demonstration
 https://youtube.com/shorts/nKW5W0nMhr4?si=7iGta-Asu9xDwnfU
+
+## System Calibration
+- **Servo Motor:**  
+  - Rotation limits adjusted to prevent wear and ensure complete scanning.  
+- **Ultrasonic Sensor:**  
+  - Tested at various distances to correct measurement errors.  
+- **Graphical Interface:**  
+  - Graphic proportions calibrated to accurately reflect real-world distances.
+
+## Optimizations Implemented
+- **Performance:**  
+  - Optimized servo motor rotation delays for faster response.  
+- **Accuracy:**  
+  - Applied a smoothing algorithm to eliminate fluctuations in sensor data.  
+- **Visual Design:**  
+  - Enhanced radar clarity and data display for improved readability.
+
+---
+
+
 
 
 
