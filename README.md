@@ -194,7 +194,7 @@ This section provides an in-depth explanation of the hardware components, their 
 ![image](https://github.com/user-attachments/assets/101306ff-2984-4790-b7bb-b6940fd8597a)
 
 ---
-## Current Stage of Software Implementation
+# Current Stage of Software Implementation
 The project is fully operational. The ultrasonic sensor, mounted on a servo motor, detects nearby objects, and the collected data is transmitted via serial communication to a graphical interface developed in Processing. The interface displays an animated radar, indicating the angle and distance of detected objects.
 
 ## Motivation for Library Choices
