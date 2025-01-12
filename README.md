@@ -230,7 +230,7 @@ The project leverages knowledge and technologies studied in the laboratory sessi
 - Performance testing for real-time system response.
 
 ## Video Demonstration
-https://youtube.com/shorts/nKW5W0nMhr4?si=7iGta-Asu9xDwnfU
+https://youtube.com/shorts/tGNQFAKVoc8?si=f6cZL8q8jK7RBZGX
 
 ## System Calibration
 - **Servo Motor:**  
