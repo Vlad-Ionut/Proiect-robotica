@@ -249,7 +249,10 @@ https://youtube.com/shorts/tGNQFAKVoc8?si=f6cZL8q8jK7RBZGX
   - Enhanced radar clarity and data display for improved readability.
 
 ---
-
+## Bibliografie
+-https://www.udemy.com/course/arduino-build-arduino-practical-projects/?couponCode=24T1MT11625BROW
+-https://www.youtube.com/watch?v=Tr0MF8FU_60
+-
 
 
 
