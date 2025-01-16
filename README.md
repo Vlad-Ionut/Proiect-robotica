@@ -252,7 +252,14 @@ https://youtube.com/shorts/tGNQFAKVoc8?si=f6cZL8q8jK7RBZGX
 ## Bibliografie
 -https://www.udemy.com/course/arduino-build-arduino-practical-projects/?couponCode=24T1MT11625BROW
 -https://www.youtube.com/watch?v=Tr0MF8FU_60
--
+## Bibliografie
+1. [Arduino UNO Datasheet](https://www.arduino.cc/en/Main/ArduinoBoardUno)  
+2. [HC-SR04 Ultrasonic Sensor Datasheet](https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf)  
+3. [SG90 Servo Motor Datasheet](https://www.towerpro.com.sg/index.php?route=product/product&product_id=83)  
+4. [Processing Language Reference](https://processing.org/reference/)  
+5. [Tutorial privind comunicarea serială Arduino-PC](https://www.arduino.cc/en/Tutorial/LibraryExamples/SerialEvent)  
+6. [Algoritmi de netezire pentru date senzor](https://www.sciencedirect.com/science/article/pii/S0031320318300127)  
+7. [Documentație oficială Arduino Servo Library](https://www.arduino.cc/reference/en/libraries/servo)
 
 
 
